@@ -1,6 +1,5 @@
-cat 0-main.js
-import ClassRoom from "./0-classroom.js";
-const room = new ClassRoom(10);
-console.log(room._maxStudentsSize)
- npm run dev 0-main.js
-10
+export default class ClassRoom {
+  constructor(maxStudentsSize) {
+    this._maxStudentsSize = maxStudentsSize;
+  }
+}
