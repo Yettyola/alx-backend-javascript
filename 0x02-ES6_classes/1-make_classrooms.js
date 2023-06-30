@@ -1,9 +1,5 @@
-cat 1-main.js
-import initializeRooms from './1-make_classrooms.js';
-console.log(initializeRooms());
-npm run dev 1-main.js
-[
-  ClassRoom { _maxStudentsSize: 19 },
-  ClassRoom { _maxStudentsSize: 20 },
-  ClassRoom { _maxStudentsSize: 34 }
-]
+import ClassRoom from './0-classroom';
+
+export default function initializeRooms() {
+  return [new ClassRoom(19), new ClassRoom(20), new ClassRoom(34)];
+}
